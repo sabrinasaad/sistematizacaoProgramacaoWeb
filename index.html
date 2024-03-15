@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovah Comunicação Visual</title>
+    <meta name="description" content="Soluções criativas e impactantes para a sua marca.">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">Inovah</span>
+            <ul class="menu">
+                <li><a>Home</a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Serviços</a></li>
+                <li><a>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="principal">
+            <section class="cabeçalho">
+                <header class="conteúdo">
+                    <h1>O mundo visual ao seu alcance!</h1>
+                    <h2 class="letreiro">• Fachadas • ACM em Geral • Letras Caixa • PVC Expandido • Adesivos • Banners •
+                    </h2>
+                </header>
+                <div class="imagens">
+                    <figure><img src="./imagens/img 1.jpeg" /></figure>
+                    <figure><img src="./imagens/img 2.jpeg" /></figure>
+                    <figure><img src="./imagens/img 3.jpeg" /></figure>
+                    <figure><img src="./imagens/img 4.jpeg " /></figure>
+                    <figure><img src="./imagens/img 5.jpeg" /></figure>
+                    <figure><img src="./imagens/img 6.jpeg" /></figure>
+                    <figure><img src="./imagens/img 7.jpeg" /></figure>
+                    <figure><img src="./imagens/img 10.jpeg" /></figure>
+                </div>
+            </section>
+        </div>
+        <section class="serviços">
+            <header>
+                <h2 class="titulo-serviços">Nossos serviços - Transformando conceitos em realidade!</h2>
+            </header>
+            <div class="card-serviços">
+                <div class="card-1">
+                    <header class="card-cabeçalho-1">
+                        <h3>Totem/Luminosos</h3>
+                    </header>
+                    <p>Estrutura vertical iluminada, geralmente utilizada para sinalização ou identificação de empresas,
+                        eventos ou locais. Destaca-se pela visibilidade noturna devido à iluminação incorporada.</p>
+                </div>
+                <div class="card-2">
+                    <header class="card-cabeçalho-2">
+                        <h3>Plotagem Veicular</h3>
+                    </header>
+                    <p>Aplicação de adesivos ou vinis especiais sobre veículos para personalização ou publicidade.
+                        Permite transformar carros, vans ou caminhões em veículos de marketing móvel.</p>
+                </div>
+                <div class="card-3">
+                    <header class="card-cabeçalho-3">
+                        <h3>PVC Expandido</h3>
+                    </header>
+                    <p>Material leve e durável, composto por PVC. Ideal para impressão e comunicação visual, é utilizado
+                        em placas, displays, e sinalizações internas devido à sua versatilidade e resistência.</p>
+                </div>
+                <div class="card-4">
+                    <header class="card-cabeçalho-4">
+                        <h3>ACM</h3>
+                    </header>
+                    <p>Material composto por duas placas de alumínio com núcleo de polietileno. Amplamente utilizado na
+                        construção de fachadas, painéis publicitários e sinalizações externas, devido à sua
+                        durabilidade, leveza e capacidade de personalização.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section>
+            <h2 class="equipe">Nossa equipe</h2>
+            <div class="foto-equipe">
+                <figure><img src="./imagens/img 13.jpeg" /></figure>
+            </div>
+            <p class="texto-equipe">A equipe da Inovah é uma mistura dinâmica de talentos, cada um trazendo habilidades
+                únicas para o mundo da comunicação visual. Fabrício é o mestre dos adesivos, aplicando sua arte com
+                precisão e destreza. João, o designer gráfico, dá vida às ideias, transformando conceitos em imagens
+                vívidas e cativantes. Fernando é o especialista em instalação de ACM, garantindo que cada projeto seja
+                montado com perfeição e durabilidade. Como diretores executivos, Saulo e Rangel lideram com visão e
+                determinação, orientando a equipe rumo ao sucesso. Luiz oferece suporte valioso como auxiliar, mantendo
+                tudo funcionando sem problemas. Romário, o serralheiro habilidoso, molda e cria estruturas sólidas para
+                complementar os designs. E Jean, o impressor digital, dá vida aos projetos com cores vibrantes e
+                detalhes nítidos. Juntos, eles formam uma equipe coesa e talentosa, dedicada a superar expectativas e
+                criar impacto visual impressionante.</p>
+        </section>
+        <section class="complemento">
+            <h2 class="complemento-titulo">Por que nos escolher:</h2>
+            <p class="complemento-texto">Compromisso com a qualidade: Utilizamos os melhores materiais e técnicas para
+                garantir resultados excepcionais em cada projeto.
+                Criatividade sem limites: Adoramos desafios e estamos sempre prontos para transformar suas ideias mais
+                ousadas em realidade.
+                Atendimento personalizado: Valorizamos cada cliente e nos dedicamos a superar suas expectativas,
+                garantindo uma experiência de serviço excepcional.</p>
+
+        </section>
+        <section class="formm">
+            <h2 class="texto-formulario">Receba mais informações sobre nossos serviços</h2>
+            <form>
+                <input class="nome-form" type="text" placeholder="Nome" id="nome">
+                <input class="email-form" type="email" placeholder="E-mail" id="email">
+                <input class="cidade-form" type="text" placeholder="Cidade" id="cidade">
+                <input class="estado-form" type="text" placeholder="Estado" id="estado">
+                <input class="enviar" type="submit" value="Enviar" id="enviar">
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('enviar').addEventListener('click', function (event) {
+            event.preventDefault();
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var cidade = document.getElementById("cidade").value;
+            var estado = document.getElementById("estado").value;
+
+            if (nome !== '' && email !== '' && cidade !== '' && estado !== '') {
+                alert('Obrigado! Seus dados foram enviados com sucesso. Entraremos em contato em breve para fornecer mais informações sobre nossos serviços.');
+                document.getElementById("nome").value = '';
+                document.getElementById("email").value = '';
+                document.getElementById("cidade").value = '';
+                document.getElementById("estado").value = '';
+            }
+            else {
+                alert('Você precisa preencher todos os dados.');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

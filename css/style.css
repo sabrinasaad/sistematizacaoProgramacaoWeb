@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #61b838;
+    color: #050303
+}
+
+html {
+    font-family: teko;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#050303
+}
+
+.menu {
+    font-family: teko;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    color:#000000
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    background: #185513;
+}
+.cabeçalho {
+    overflow: clip;
+    background: #185513; 
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding: 0rem 2rem;
+    margin:auto  
+}
+
+.conteúdo {
+    font-family: teko;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    font-family: teko;
+    font-size: 3.5rem;
+    font-weight: 800 ;
+}
+
+.letreiro {
+    font-family: teko;
+    font-size: 1.5rem;
+    font-weight: 400 ;
+    justify-content: center;
+}
+
+.imagens {
+    max-width: 60%;
+    column-count: 4;
+    column-gap: 1rem ;
+    margin: -1rem;
+}
+
+.imagens > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.serviços {
+    display: flex;
+    flex-direction: column ;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.servicos-cabeçalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titulo-serviços {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    justify-content: center;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600 ;
+    align-items: center;
+    display:flex;
+    color:#000000   
+}
+
+
+.card-serviços {
+    padding: 0 rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;  
+}
+
+.card-1 {
+    background: #185513;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+}
+
+.equipe {
+    margin-bottom: 20px;
+    justify-content: center;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    display:flex;
+    color:#000000
+}
+
+.foto-equipe {
+    top: -60px;
+    margin: 10rem;
+    height: auto;
+    max-width: 30%;
+    width: 100%;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-right:20px;
+    float:left;    
+}
+
+.foto-equipe >figure >img {
+    width: 100%;
+    position: relative;
+    top: -120px;
+    border-radius: 10%;
+    margin-right:20px;
+    float:left; 
+}
+
+.card-2 {
+    background: #185513;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+}
+
+.card-3 {
+    background: #185513;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+}
+
+.card-4 {
+    background: #185513;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+}
+
+.texto-equipe {
+    position: relative;
+    top: 150px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    flex-basis: 0.5rem;
+    margin-left: 5px;
+    margin-right: 300px;
+    overflow: hidden;
+    font-family: teko;
+    font-size: 1rem;
+    font-weight: 500 ;
+    text-align: justify;  
+}
+
+.complemento-titulo {
+    position: relative;
+    top: -200px;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    display:flex;
+    color:#000000
+}
+
+.complemento-texto {
+    background: #7fb17d;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+    margin-left: 400px;
+    margin-right: 400px;
+    overflow: hidden;
+    font-family: teko;
+    font-size: 1rem;
+    font-weight: 500 ;
+    text-align: justify;
+    position: relative;
+    top: -200px;
+}
+
+.formulario {
+    background: #185513;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column; 
+    gap: 2rem;
+    flex-basis: 28rem;
+    font-family: teko;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600 ;
+    align-items: center;
+    display:flex;
+    position: relative;
+    top: -500px
+}
+
+.texto-formulario {
+    position: relative;
+    top: 15px;
+    justify-content: center;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600 ;
+    align-items: center;
+    display:flex;
+    color:#000000
+}
+
+.informações-formulario {
+    justify-content: center;
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 300 ;
+    align-items: center;
+    display:flex;
+    color:#000000 
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input {
+   margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   
+}
+
+.nome-form {
+    margin-left: 200px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   vertical-align: 50px;
+   position: relative;
+   background-color: #123817;
+   color: #000000;
+   font-weight: bold;
+}
+
+.email-form {
+    margin-left: 200px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   background-color: #123817;
+   color: #000000;
+   font-weight: bold;
+   
+}
+
+.cidade-form {
+    margin-left: 200px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   background-color: #123817;
+   color: #000000;
+   font-weight: bold;
+ 
+}
+
+.estado-form {
+    margin-left: 200px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   background-color: #123817;
+   color: #000000;
+   font-weight: bold;
+   
+}
+
+.enviar {
+    margin-left: 200px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin-top: 15px;
+   height: 50px;
+   padding: 15px;
+   border-radius: 20px;
+   border:none; 
+   font-size: 15px;
+   background-color: #123817;
+   color: #757575;
+   font-weight: bold;  
+}
